@@ -1,7 +1,6 @@
 const express = require('express');
 const { authToken } = require('../middlewares/auth');
 const {ToyModel,validToy} = require("../models/ToyModel");
-// const { validUser } = require('../models/userModel');
 const router = express.Router();
 
 router.get('/',  async(req, res) => {

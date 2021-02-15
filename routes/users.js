@@ -53,7 +53,6 @@ router.post("/login",async(req,res) => {
 })
 
 
-// Sign up new user
 router.post("/", async(req,res) => {
   let validBody = validUser(req.body);
   if (validBody.error) {

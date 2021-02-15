@@ -17,9 +17,7 @@ exports.routesInit = (app) => {
   app.use("/", indexR);
   app.use("/users", usersR);
   app.use("/toys",toyR);
-  
-// במקרה שמגיע לכתובת לא קיימת ייקבל 404
-  app.use((req,res) => {
+    app.use((req,res) => {
     res.status(404).json({msg:"404 url page not found"})
   })
 }
